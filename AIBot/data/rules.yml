@@ -1,0 +1,23 @@
+version: "3.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Who are you
+  steps:
+  - intent: who_are_you
+  - action: utter_elsa
+
+- rule: Scold back
+  steps:
+  - intent: bad_word
+  - action: utter_scold_back

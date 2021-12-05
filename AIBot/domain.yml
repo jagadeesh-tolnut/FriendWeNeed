@@ -1,0 +1,58 @@
+version: "3.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - who_are_you
+  - have_exams
+  - bad_word
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a AI bot, powered by TOLNUT."
+
+  utter_elsa:
+  - text: "I am Elsa, I am your friend."
+
+  utter_what_happend:
+  - text: "why?, what's happening?"
+
+  utter_exams_help:
+  - text: "Don't feel hard, I can help you."
+
+  utter_exam_advise:
+  - text: "First study the important question in every chapters"
+
+  utter_go_back_to_study:
+  - text: "Now, go back to study. Don't get distracted, Stay Focused."
+
+  utter_scold_back:
+  - text: "You motherfucking bitch"
+
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

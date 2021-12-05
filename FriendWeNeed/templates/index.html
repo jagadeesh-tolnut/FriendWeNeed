@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+    <title>buddy</title>
+<!--    <link rel="stylesheet" href="style.css">-->
+        <link rel="stylesheet" href="{%static 'style.css'%}">
+    </head>
+    <body>
+        <header>
+        <div class="main">
+            <div class="logo">
+                <img src="{% static 'images/b.png' %}" alt="">
+            </div>
+            <ul>
+                <li><a href="http://127.0.0.1:8000/">HOME</a></li>
+                <li><a href="#">HELP</a></li>
+                <li><a href="#">ABOUT US</a></li>
+
+            </ul>
+           
+        </div>
+        <img src="{% static 'images/2d image-c.png' %}" class="bot">  <br>
+        <div class="textbox">
+            <h1>Hi! i am Buddy</h1>
+            <p>An ai virtual human who helps you when <br>the times are hard for you,If you have any 
+                hard time please come to me and chat to me, i will make your worries fly away.</p>
+                <a href="chat">start chat</a>
+
+        </div>
+    </header>
+    </body>
+</html>

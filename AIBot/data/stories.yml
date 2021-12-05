@@ -1,0 +1,25 @@
+version: "3.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: exam path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_what_happend
+  - intent: have_exams
+  - action: utter_exams_help
+  - action: utter_exam_advise
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_go_back_to_study
+
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!--    <link rel="stylesheet"-->
+<!--        href="chatstyle.css">-->
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'chatstyle.css'%}">
+</head>
+
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="{% static 'images/b.png' %}" alt="">
+            </div>
+            <ul>
+                <li><a href="http://127.0.0.1:8000/">HOME</a></li>
+                <li><a href="#">HELP</a></li>
+                <li><a href="#">ABOUT US</a></li>
+
+            </ul>
+           
+        </div>
+    </header>
+        <img src="{% static 'images/2d image-s.png' %}" class="bot">
+    <div class="chat-container"></div>
+
+    <script
+        src="https://npm-scalableminds.s3.eu-central-1.amazonaws.com/@scalableminds/chatroom@master/dist/Chatroom.js" />
+    </script>
+    <script type="text/javascript">
+        var chatroom = new window.Chatroom({
+            host: "http://localhost:5005",
+<!--            title: "Chat with Lisa",-->
+            container: document.querySelector(".chat-container"),
+            welcomeMessage: "Hi, I am Buddy",
+            speechRecognition: "en-US",
+            voiceLang: "en-US"
+        });
+        chatroom.openChat();
+    </script>
+</body>
+
+</html>
